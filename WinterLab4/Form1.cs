@@ -22,7 +22,7 @@ namespace WinterLab4
          * 
          * In this program, we prompt the user - or, a trip advisor - to supply information about the trip, and
          * we provide the user with information about how much the trip will cost.
-         /
+         */
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -56,7 +56,7 @@ namespace WinterLab4
                     // If the user is traveling with 1 or 3 people, tell them about the BOGO offer.
                     switch (numPeople)
                     {
-                        case 2:
+                        case 1:
                         case 3:
                             DisplayMsg("Special when booking single or triple.\nBOGO Special - Call 555-1212 to receive another person free!", "Limited Time Offer");
                             break;
@@ -185,7 +185,7 @@ namespace WinterLab4
         private void DisplayMsg(string message, string title)
         {
             // Display a MessageBox to the user, using the specified message and title.
-            MessageBox.Show(message, title)
+            MessageBox.Show(message, title);
         }
     }
 }
